@@ -10,6 +10,8 @@ $(document).ready(function() {
     //add names to h3 under PLAYER1 and PLAYER2
     $("h3#player1name").text(nameUser1);
     $("h3#player2name").text(nameUser2);
+
+    $("form#nameInput1").hide();
   });
 });
 
