@@ -4,10 +4,6 @@
 ## Description:
 
 ## Specifications:
-* The program will take the user name and apply it to the players prototype
-  * Example Input: James
-  * Example Output: Player 1 (James)
-
 * The program will output a random number when the player "rolls" the dice
   * Example Input: Player pushes "roll" button
   * Example Output: 4
@@ -39,19 +35,3 @@
 ## Support and Contact
 
 ## License
-
-
-
-  $("form#player1buttons").submit(function(event) {
-    event.preventDefault();
-    debugger;
-    var max = 6;
-    var min = 1;
-    // var roll = Player.randomdiceRoll(min, max);
-
-    var newPlayer = new Player(nameUser1);
-    $("p.dice1").append(newPlayer.randomdiceRoll());
-
-   console.log(roll);
-
-  
