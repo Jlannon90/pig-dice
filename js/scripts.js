@@ -2,7 +2,6 @@
 
 //player constructor
 function Player() {
-  // this.roll = roll;
 }
 
 //DiceRoll prototype
@@ -16,14 +15,19 @@ Player.prototype.randomDiceRoll = function() {
 // front end
 $(document).ready(function() {
   $("button#player1roll").click(function(event) {
-    console.log("hi");
     event.preventDefault();
-    // debugger;
 
     var newPlayer = new Player();
-    $("p").text(newPlayer.randomDiceRoll());
+    $("p.dice1").text(newPlayer.randomDiceRoll());
 
-    // console.log(newDiceRoll);
+  });
+
+
+  $("button#player2roll").click(function(event) {
+    event.preventDefault();
+
+    var newPlayer = new Player();
+    $("p.dice2").text(newPlayer.randomDiceRoll());
 
   });
 });
