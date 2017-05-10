@@ -1,19 +1,29 @@
+// back end
+
+//player constructor
+function Player() {
+  // this.roll = roll;
+}
+
+//DiceRoll prototype
+Player.prototype.randomDiceRoll = function() {
+  return Math.floor(Math.random() * 6 + 1);
+}
+
+
+
+
 // front end
 $(document).ready(function() {
-  $("form#nameInput1").submit(function(event) {
+  $("button#player1roll").click(function(event) {
+    console.log("hi");
     event.preventDefault();
+    // debugger;
 
-    //get names from user input form
-    var nameUser1 = $("input#person1name").val();
-    var nameUser2 = $("input#person2name").val();
+    var newPlayer = new Player();
+    $("p").text(newPlayer.randomDiceRoll());
 
-    //add names to h3 under PLAYER1 and PLAYER2
-    $("h3#player1name").text(nameUser1);
-    $("h3#player2name").text(nameUser2);
+    // console.log(newDiceRoll);
 
-    $("form#nameInput1").hide();
   });
 });
-
-
-// back end

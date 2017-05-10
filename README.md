@@ -39,3 +39,19 @@
 ## Support and Contact
 
 ## License
+
+
+
+  $("form#player1buttons").submit(function(event) {
+    event.preventDefault();
+    debugger;
+    var max = 6;
+    var min = 1;
+    // var roll = Player.randomdiceRoll(min, max);
+
+    var newPlayer = new Player(nameUser1);
+    $("p.dice1").append(newPlayer.randomdiceRoll());
+
+   console.log(roll);
+
+  

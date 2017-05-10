@@ -14,31 +14,39 @@
       </div>
 
       <div class="row">
-        <form id="nameInput1">
-         <div class="form-group">
-            <label for="task">Player 1 enter your name:</label>
-            <input type="text" class="form-control" id="person1name" placeholder="Name">
-         </div>
-         <div class="form-group">
-            <label for="task">Player 2 enter your name:</label>
-            <input type="text" class="form-control" id="person2name" placeholder="Name">
-         </div>
-         <button type="submit" class="btn btn-info">Enter</button>
-       </form>
+        <!--start of left col -->
         <div class="col-md-6">
           <h2>PLAYER 1</h2>
           <h3 id="player1name"></h3>
+          <div class="dice1">
+            <h4>results of player 1 dice roll</h4>
+            <p>
 
+            </p>
+          </div>
+            <button id="player1roll" type="button" name="button">Roll</button>
+            <button id="player1hold" type="button" name="button">Hold</button>
 
-        </div>
+        </div> <!--end of left col -->
 
-        <div class="col-md-6">
+        <div class="col-md-6"> <!-- start of right col-->
           <h2>PLAYER 2</h2>
           <h3 id="player2name"></h3>
+          <div class="dice2">
+            <h4>results of player 2 dice roll</h4>
+            <p>
+
+            </p>
+          </div>
+
+            <button id="player2roll" type="button" name="button">Roll</button>
+            <button id="player2hold" type="button" name="button">Hold</button>
 
 
-        </div>
-      </div>
+        </form>
+
+      </div> <!-- end right col div -->
+      </div> <!-- end row div-->
 
 
     </div>
